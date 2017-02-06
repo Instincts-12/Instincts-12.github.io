@@ -3,14 +3,10 @@ eventlist=data.eventlist.event;
       console.log(eventlist);
 });
 $(document).ready(function(){    
-
-//    var paperfold = $('eventlist').paperfold();
-
-//	$('events img').click(paperfold.toggle);
-//        $("modal").hide();
-      $("card").click(function(){
-          $("card").removeClass("active");
-          $(this).addClass("active");
+    $("modal").hide();
+    $("card").click(function(){
+        $("card").removeClass("active");
+        $(this).addClass("active");
           cat=$(this).children('h3').text().toUpperCase();
           eventsForCard=eventlist.filter(function(event){
               return event.category.toUpperCase()==cat;
@@ -21,11 +17,9 @@ $(document).ready(function(){
               list+="<li>"+eventsForCard[x].name+"</li>";
           }
           
-          list="<ul id=eventlist>"+list+"</ul><detail></detail>";
-          
-          
-          $("modal-content").html(list);
-          $("modal").show();
+          $("#eventlist").html(list);
+          $("detail").hide();
+          $("#event-modal").show();
       });
       function tag(tag,val){
           return "<"+tag+">"+val+"</"+tag+">";
@@ -38,25 +32,21 @@ $(document).ready(function(){
               return event.name.toUpperCase()==eventname;
           });
           txt="";
-          txt=tag("h3",event[0].name)+tag("p",event[0].desc);
-          rule="<h4>RULE</h4>";
+          $('#title').text(event[0].name);
+          $('#desc').text(event[0].desc);
+          rule="";
           for(x in event[0].rules.rule){
               rule+=tag("li",event[0].rules.rule[x]);
           }
-          rule=tag("ul",rule);
-          txt+=rule;
-          contact="<h4>CONTACT</h4>";
+          $('#rules').html(rule);
+          contact="";
           for(x in event[0].contacts.contact){
               console.log(event[0].contacts.contact[x]);
               contact+=tag("li",event[0].contacts.contact[x]);
               
           }
-          
-          contact=tag("ul",contact);
-          txt+=contact;
-          
-          
-          $("detail").html(txt);
+          $('#contacts').html(contact);
+          $("detail").show();
           
       });
       $("close").click(function(){
@@ -77,8 +67,16 @@ $(document).ready(function(){
 
 });
 function big(img){
-      src = img.src.replace("w=300","w=800");
-      txt="<img src='"+src+"'/>";
-      $("modal-content").html(txt);
-      $("modal").show();
+      $("#image-modal img").attr("src",img.src.replace("w=300","w=800"));
+      
+      $("#image-modal").show();
     }  
+    
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng( 12.7501954, 80.1964977),
+        zoom: 12
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}
