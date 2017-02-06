@@ -1,0 +1,250 @@
+*{
+    box-sizing:border-box;
+    /*border:1px dashed red;*/
+    font-family: 'Nunito', sans-serif;
+
+}
+body{
+    margin:0px;
+    background:#003366 url('../drawable/texture_layer.png');
+
+}
+
+/*------------------*/
+loading{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+loading img{
+    width:300px;
+}
+
+/*---------------------*/
+events{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+events > img{
+    width:100%;
+}
+eventlist{
+    margin-top:100px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size:cover;
+    text-align: center;
+    color:black;
+}
+card{
+    display:inline-flex;
+    flex-direction:column;
+    align-items: center;
+    background:rgb(230,230,230);
+    text-align: center;
+    width:300px;
+    margin:1em;
+    cursor:pointer;
+}
+
+card:hover,card.active{
+    background:#003366;
+    color:white;
+    box-shadow:5px 5px 50px  #eee;
+}
+card:hover h3,card.active h3{
+    color:yellow;
+    
+}
+card img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin:1em auto;
+}
+card h3{
+    color:#00acc2;
+}
+
+/*---------------------------------------*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    
+}
+
+nav.active{
+    border-top:4px dotted yellow;
+    background:#00acc2;
+    box-shadow:5px -2px 0px 5px #00ACC2;
+}
+
+brand{
+    display:flex;
+    align-items: center;
+    /*border-right:1px solid #0099cc;*/
+}
+brand img{
+    width:30px;
+    height:60px;
+    /*height:auto;*/
+    margin:auto 10px;
+}
+/*nav h1{
+    margin:0;
+    display:inline;
+    margin:auto 10px;
+    color:yellow;
+}*/
+nav a{
+    color:white;
+    text-decoration: none;
+    padding:0.5em;
+    text-transform: uppercase;
+}
+nav a:hover{
+    border-bottom:1px solid white;
+}
+
+/*--------------------------*/
+modal{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+modal-content{
+    background:white;
+    border-radius:5px;
+    position: relative;
+    padding:1em;
+    border:1px solid #eee;
+}
+
+modal-content > ul{
+    list-style: none;
+    padding:0px;
+    
+}
+modal-content >ul li{
+    display:inline;
+    border:1px solid #ccffcc;
+    color:#ccffcc;
+    padding:1em;
+    margin:1em;
+    border-radius: 1em;
+    cursor:pointer
+}
+modal-content >ul li:hover,li.active{
+    background-color:#ccffcc;
+    color:black;
+}
+
+modal-content detail{
+    display:block;
+    max-width: 960px;
+    margin: auto;
+}
+modal close{
+    position: absolute;
+    display: inline-block;
+    right:0;
+    top:0;
+    padding:1em;
+    color:white;
+}
+modal img{
+    max-width:80vw;
+    height:auto;
+}
+/*-------------------------*/
+landing{
+    display:flex;
+    background:url('../drawable/landing-01.svg');
+    height:100vh;
+    background-size:cover;
+    background-position:bottom;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+landing h1{
+    font-size:4em;
+}
+/*--------------------------------*/
+sections{
+    padding:1em;
+    display:block;
+    color:white;
+    margin:150px auto;
+    
+}
+wrapper{
+    display:block;
+    background:#00acc2;
+    border-radius:5px;
+    border-top:2px dashed yellow;
+    box-shadow:0px -20px 0px 0px #00ACC2;
+    margin:auto;
+    margin-bottom:100px;
+    position:relative;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+wrapper > p{
+    max-width: 960px;
+    text-align: center;
+    margin:auto;
+    text-transform: uppercase;
+    font-size:0.75em;
+    
+}
+circle{
+    display:inline-block;
+    background:#003366;
+    border-radius: 50%;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:2px dashed yellow;
+    box-shadow:0px 0px 0px 10px #003366;
+    color:yellow;
+    width:150px;
+    height:150px;
+    line-height: 150px;
+}
+sections wrapper h3{
+    margin:0px;
+    text-transform: uppercase;
+}
+
+/*----------------*/
+gallery{
+    display:block;
+    flex-wrap:wrap;
+    text-align: center;
+}
+gallery img{
+    width:300px;
+    height:auto;
+    margin:1em;
+}

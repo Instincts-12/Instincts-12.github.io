@@ -1,0 +1,78 @@
+{
+  "eventlist": {
+    "event": [
+      {
+        "name": "EventofDance",
+        "category": "Dance",
+        "desc": "Description goe shere.",
+        "rules": {
+          "rule": [
+            "Rule1",
+            "Rule2",
+            "Rule3"
+          ]
+        },
+        "contacts": {
+          "contact": {
+            "name": "AkashMilton",
+            "number": "9443807686"
+          }
+        }
+      },
+      {
+        "name": "EventofDance2",
+        "category": "Dance",
+        "desc": "Description goe shere.",
+        "rules": {
+          "rule": [
+            "Rule1",
+            "Rule2",
+            "Rule3"
+          ]
+        },
+        "contacts": {
+          "contact": {
+            "name": "AkashMilton",
+            "number": "9443807686"
+          }
+        }
+      },
+      {
+        "name": "EventofRock",
+        "category": "ROck",
+        "desc": "Description goe shere.",
+        "rules": {
+          "rule": [
+            "Rule1",
+            "Rule2",
+            "Rule3"
+          ]
+        },
+        "contacts": {
+          "contact": {
+            "name": "AkashMilton",
+            "number": "9443807686"
+          }
+        }
+      },
+      {
+        "name": "EventofRock2",
+        "category": "Rock",
+        "desc": "Description goe shere.",
+        "rules": {
+          "rule": [
+            "Rule1",
+            "Rule2",
+            "Rule3"
+          ]
+        },
+        "contacts": {
+          "contact": {
+            "name": "AkashMilton",
+            "number": "9443807686"
+          }
+        }
+      }
+    ]
+  }
+}

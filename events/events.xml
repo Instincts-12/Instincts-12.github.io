@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<eventlist>
+        <event>
+                <name>EventofDance</name>
+                <category>Dance</category>
+                <desc>Description goe shere.</desc>
+                <rule>Rule1</rule>
+                <rule>Rule2</rule>
+                <rule>Rule3</rule>
+                <contact>
+                    <name>AkashMilton</name>
+                    <number>9443807686</number>
+                </contact>
+        </event>
+        <event>
+                <name>EventofDance</name>
+                <category>Dance</category>
+                <desc>Description goe shere.</desc>
+                <rule>Rule1</rule>
+                <rule>Rule2</rule>
+                <rule>Rule3</rule>
+                <contact>
+                    <name>AkashMilton</name>
+                    <number>9443807686</number>
+                </contact>
+        </event>
+        <event>
+                <name>EventofDance</name>
+                <category>Dance</category>
+                <desc>Description goe shere.</desc>
+                <rule>Rule1</rule>
+                <rule>Rule2</rule>
+                <rule>Rule3</rule>
+                <contact>
+                    <name>AkashMilton</name>
+                    <number>9443807686</number>
+                </contact>
+        </event>
+        <event>
+                <name>EventofDance</name>
+                <category>Dance</category>
+                <desc>Description goe shere.</desc>
+                <rule>Rule1</rule>
+                <rule>Rule2</rule>
+                <rule>Rule3</rule>
+                <contact>
+                    <name>AkashMilton</name>
+                    <number>9443807686</number>
+                </contact>
+        </event>
+</eventlist>	
