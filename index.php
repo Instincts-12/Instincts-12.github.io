@@ -266,7 +266,7 @@
             <img></img>
         </modal>
         <footer>
-
+            Copyright &copy; 2016-2017 by Instincts - SSN. All Rights are Reserved.
         </footer>
     </body>
     <script src="libs/main.js"></script>
