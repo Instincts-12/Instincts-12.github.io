@@ -2,7 +2,7 @@ $.getJSON('events/events.json',function(data){
 eventlist=data.eventlist.event;
       console.log(eventlist);
 });
-$(document).ready(function(){    
+$(document).ready(function(){
     $("modal").hide();
     $("card").click(function(){
         $("card").removeClass("active");
@@ -12,11 +12,11 @@ $(document).ready(function(){
               return event.category.toUpperCase()==cat;
           });
           list="";
-         
+
           for(var x in eventsForCard){
               list+="<li>"+eventsForCard[x].name+"</li>";
           }
-          
+
           $("#eventlist").html(list);
           $("detail").hide();
           $("#event-modal").show();
@@ -43,19 +43,19 @@ $(document).ready(function(){
           for(x in event[0].contacts.contact){
               console.log(event[0].contacts.contact[x]);
               contact+=tag("li",event[0].contacts.contact[x]);
-              
+
           }
           $('#contacts').html(contact);
           $("detail").show();
-          
+
       });
       $("close").click(function(){
           $("card").removeClass("active");
       });
-      
-    
-      
-//      
+
+
+
+//
 //      $(window).scroll(function(){
 //          if($("aboutus").offset().top<=$(window).scrollTop()){
 //              $("nav").addClass("affix");
@@ -68,15 +68,21 @@ $(document).ready(function(){
 });
 function big(img){
       $("#image-modal img").attr("src",img.src.replace("w=300","w=800"));
-      
+
       $("#image-modal").show();
-    }  
-    
+    }
+
 function myMap() {
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
         center: new google.maps.LatLng( 12.7501954, 80.1964977),
-        zoom: 12
+        zoom: 14
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+          position:{lat: 12.7501954 ,lng: 80.1964977 } ,
+          map: map,
+          title: 'Instincts'
+        });
+    marker.setMap(map);
 }

@@ -18,18 +18,18 @@
         });
     </script>
     <body>
-       
+
         <loading id="loading">
             <img src="drawable/logo_stroke (1)_animated.svg"/>
         </loading>
-        
+
         <landing>
             <p>SSN PRESENTS</p>
             <h1>INSTINCTS</h1>
             <p>in association with</p>
             <h2>HCL</h2>
         </landing>
-        
+
         <sections>
             <wrapper>
                 <circle>
@@ -47,8 +47,8 @@ The future is set in motion when there is a confluence of youth; SSN takes pride
                 <circle>
                     <h3>INSTINCTS</h3>
                 </circle>
-                <p> 
-                    Instincts, since its inception in 2006, has today become one of the largest campus festivals in South India, attracting crowds of well over 10,000, from over 150 institutions of higher learning. 
+                <p>
+                    Instincts, since its inception in 2006, has today become one of the largest campus festivals in South India, attracting crowds of well over 10,000, from over 150 institutions of higher learning.
 A number of celebrities, performers and eminent personalities from the literary,cine, musical, sporting and educational streams visit our campus across these three days.
 We have played host in the past to names of the calibre of Madhavan, Arya, Jeyam Ravi, Anirudh Ravichander, Prabhu Deva, Gautam Vasudev Menon, Sivamani, Shaktishree Gopalan, Keith Peters, Santhanam, RJ Balaji , Srikanth and many more.
 Our participants charm the country with the largest battle of intellect, culture and skill, providing a treat to anyone who is witness. Instincts is a combination of fun, learning and exposure all combined into one huge package. It is the ultimate battleground to unleash talent,showcase skills and soak in unlimited fun. At the end of it, anyone and everyone involved gains something massive from this cultural extravaganza - participant and organizer alike. Artistically and technically, INSTINCTS is a college cultural fest that stands unparalleled to this date.
@@ -138,8 +138,8 @@ Get Ready for SSN Instincts 2K17.
                             <p>The definition or any quote to title.Lorem Ipsum
                                     ion or any quote to title.Lorem Ipsum</p>
                         </card>
-                       
-                        
+
+
                     </eventlist>
                 </events>
             </wrapper>
@@ -157,7 +157,7 @@ Get Ready for SSN Instincts 2K17.
                 </gallery>
             </wrapper>
             <wrapper>
-                <circle>    
+                <circle>
                     <h3>Contact-us</h3>
                 </circle>
                 <contactbox>
@@ -186,7 +186,7 @@ Get Ready for SSN Instincts 2K17.
                     <h3>Map</h3>
                 </circle>
                 <div id='map'>
-                    
+
                 </div>
             </wrapper>
         </sections>
@@ -205,7 +205,7 @@ Get Ready for SSN Instincts 2K17.
                 <a href="#">Link</a>
             </links>
     </nav>
-    
+
          <modal id='event-modal'>
             <close onclick="this.parentElement.style.display='none'">X</close>
             <modal-content>
@@ -226,17 +226,17 @@ Get Ready for SSN Instincts 2K17.
                     <h4>COntact</h4>
                     <ul id="contacts"><li>AkashMilton</li><li>9443807686</li></ul>
                 </detail>
-                   
+
             </modal-content>
         </modal>
         <modal onclick="this.style.display='none'" id='image-modal'>
             <img></img>
         </modal>
         <footer>
-            
+
         </footer>
     </body>
     <script src="libs/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73231zggkC-td1FP7UVHJN8op1ZqEy38&callback=myMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73231zggkC-td1FP7UVHJN8op1ZqEy38&callback=myMap"></script>
 
 </html>
