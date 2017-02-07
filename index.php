@@ -166,19 +166,20 @@
                     <Stitle>ASSOCIATE SPONSORS</Stitle>
                     <associatesponsor>
                         <div>
-                            <img src="sponsors/asialogo1.jpg" width="100">
+                            <img src="drawable/image.php?url=../sponsors/asialogo1.jpg&w=250">
                         </div>
                         <div>
-                            <img src="sponsors/image1.JPG" width="100">
+                            <img src="drawable/image.php?url=../sponsors/image1.JPG&w=250">
+
                         </div>
                         <div>
-                            <img src="sponsors/Logo-Big.jpg" width="100">
+                            <img src="drawable/image.php?url=../sponsors/Logo-Big.jpg&w=250">
                         </div>
                         <div>
-                            <img src="sponsors/Blue-star-1.jpg" width="100">
+                            <img src="drawable/image.php?url=../sponsors/Blue-star-1.jpg&w=250">
                         </div>
                         <div>
-                            <img src="sponsors/archee.jpg" width="100">
+                            <img src="drawable/image.php?url=../sponsors/archee.jpg&w=250">
                         </div>
                     </associatesponsor>
                 </sponsor>
