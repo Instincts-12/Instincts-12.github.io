@@ -152,6 +152,37 @@
                     <?php endif;endforeach;?>
                 </gallery>
             </wrapper>
+            <wrapper id="sponsor">
+                <circle>
+                    <h3>Sponsors</h3>
+                </circle>
+                <sponsor>
+                    <Stitle>TITLE SPONSOR</Stitle><br/>
+                    <titlesponsor>
+                        <img src="sponsors/hcl.gif" width="300"/>
+                    </titlesponsor>
+                </sponsor>
+                <sponsor>
+                    <Stitle>ASSOCIATE SPONSORS</Stitle>
+                    <associatesponsor>
+                        <div>
+                            <img src="sponsors/asialogo1.jpg" width="100">
+                        </div>
+                        <div>
+                            <img src="sponsors/image1.JPG" width="100">
+                        </div>
+                        <div>
+                            <img src="sponsors/Logo-Big.jpg" width="100">
+                        </div>
+                        <div>
+                            <img src="sponsors/Blue-star-1.jpg" width="100">
+                        </div>
+                        <div>
+                            <img src="sponsors/archee.jpg" width="100">
+                        </div>
+                    </associatesponsor>
+                </sponsor>
+            </wrapper>
             <wrapper id="contact">
                 <circle>
                     <h3>Contact-us</h3>

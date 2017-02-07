@@ -270,6 +270,46 @@ gallery img{
     height:auto;
     margin:1em;
 }
+/*----------------------*/
+sponsor{
+    display: block;
+    padding: 30px;
+}
+
+sponsor img{
+    /*margin: 50px;*/
+    margin: 80px auto;
+}
+titlesponsor{
+    display: block;
+}
+associatesponsor{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+}
+associatesponsor div{
+    width: 50%;
+    margin: auto;
+    min-width: 300px;
+    display: inline-flex;
+}
+associatesponsor div img{
+    margin: 80px auto;
+    /*margin-top: 80px;*/
+    width: 250px;
+
+}
+Stitle{
+    text-transform: uppercase;
+    margin-top:  250px;
+    padding: 12px;
+    font-size: 24px;
+    background: #fff;
+    color: #111;
+    border-radius: 15px;
+}
 
 /*-----------------*/
 contactbox{
