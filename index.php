@@ -31,34 +31,30 @@
         </landing>
 
         <sections>
-            <wrapper>
+            <wrapper class="texts">
                 <circle>
                     <h3>About-Us</h3>
                 </circle>
-                <p>
-                    SSN Institutions had its humble origins in 1996, when it was established by Dr.Shiv Nadar, eminent industrialist, philanthropist, and educationist. The small seed that was sown then has today grown into the foremost private engineering college in Tamil Nadu rolling out nothing less than the finest brains in the country.
-SSN prides itself a little in being among the top ten most serene and beautiful campuses in the country, prides itself a little more in having the best infrastructure in the country and prides itself the most in providing an amalgamation of stimulating environments for intellectual development, free thinking and personal growth, challenging its students with dynamic learning opportunities and equipping them with the skills, insights, attitudes and practical experiences that are necessary to carry forward the various roles of society.
-So when it comes to learning , SSN doesn't stop at the educational front,it acts as a catalyst that ignites students to reach the point of zenith in the cultural sphere as well.
-The future is set in motion when there is a confluence of youth; SSN takes pride in being responsible for the revolution that follows!
-
-                </p>
+                    <p>SSN Institutions had its humble origins in 1996, when it was established by Dr.Shiv Nadar, eminent industrialist, philanthropist, and educationist. The small seed that was sown then has today grown into the foremost private engineering college in Tamil Nadu rolling out nothing less than the finest brains in the country.</p> <br/>
+                    <p>    SSN prides itself a little in being among the top ten most serene and beautiful campuses in the country, prides itself a little more in having the best infrastructure in the country and prides itself the most in providing an amalgamation of stimulating environments for intellectual development, free thinking and personal growth, challenging its students with dynamic learning opportunities and equipping them with the skills, insights, attitudes and practical experiences that are necessary to carry forward the various roles of society.</p><br/>
+                    <p>    So when it comes to learning , SSN doesn't stop at the educational front,it acts as a catalyst that ignites students to reach the point of zenith in the cultural sphere as well.</p><br/>
+                    <p>    The future is set in motion when there is a confluence of youth; SSN takes pride in being responsible for the revolution that follows!</p>
             </wrapper>
-            <wrapper>
+            <wrapper class="texts">
                 <circle>
                     <h3>INSTINCTS</h3>
                 </circle>
-                <p>
-                    Instincts, since its inception in 2006, has today become one of the largest campus festivals in South India, attracting crowds of well over 10,000, from over 150 institutions of higher learning.
-A number of celebrities, performers and eminent personalities from the literary,cine, musical, sporting and educational streams visit our campus across these three days.
-We have played host in the past to names of the calibre of Madhavan, Arya, Jeyam Ravi, Anirudh Ravichander, Prabhu Deva, Gautam Vasudev Menon, Sivamani, Shaktishree Gopalan, Keith Peters, Santhanam, RJ Balaji , Srikanth and many more.
-Our participants charm the country with the largest battle of intellect, culture and skill, providing a treat to anyone who is witness. Instincts is a combination of fun, learning and exposure all combined into one huge package. It is the ultimate battleground to unleash talent,showcase skills and soak in unlimited fun. At the end of it, anyone and everyone involved gains something massive from this cultural extravaganza - participant and organizer alike. Artistically and technically, INSTINCTS is a college cultural fest that stands unparalleled to this date.
 
-We welcome you to join us this year on the 9th, 10th and 11th of March for the 12th version of INSTINCTS!
+                    <p>Instincts, since its inception in 2006, has today become one of the largest campus festivals in South India, attracting crowds of well over 10,000, from over 150 institutions of higher learning.</p><br/>
+                    <p>A number of celebrities, performers and eminent personalities from the literary,cine, musical, sporting and educational streams visit our campus across these three days.</p><br/>
+                    <p>We have played host in the past to names of the calibre of Madhavan, Arya, Jeyam Ravi, Anirudh Ravichander, Prabhu Deva, Gautam Vasudev Menon, Sivamani, Shaktishree Gopalan, Keith Peters, Santhanam, RJ Balaji , Srikanth and many more.</p><br/>
+                    <p>Our participants charm the country with the largest battle of intellect, culture and skill, providing a treat to anyone who is witness. Instincts is a combination of fun, learning and exposure all combined into one huge package. It is the ultimate battleground to unleash talent,showcase skills and soak in unlimited fun. At the end of it, anyone and everyone involved gains something massive from this cultural extravaganza - participant and organizer alike. Artistically and technically, INSTINCTS is a college cultural fest that stands unparalleled to this date.</p><br/>
 
-So get ready to hop onto the wildest and most adventurous roller coaster rides till date.
+                    <p>We welcome you to join us this year on the 9th, 10th and 11th of March for the 12th version of INSTINCTS!</p><br/>
 
-Get Ready for SSN Instincts 2K17.
-                </p>
+                    <p>So get ready to hop onto the wildest and most adventurous roller coaster rides till date.</p><br/>
+
+                    <p>Get Ready for SSN Instincts 2K17.</p>
             </wrapper>
             <wrapper>
                 <circle>
