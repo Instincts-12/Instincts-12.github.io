@@ -76,6 +76,7 @@ nav{
     display:flex;
     justify-content: space-between;
     color:white;
+    padding: 1em;
     align-items: center;
     position:fixed;
     top:0;
@@ -110,11 +111,16 @@ brand img{
 nav a{
     color:white;
     text-decoration: none;
-    padding:0.5em;
+    padding:1em;
+    font-weight:normal;;
     text-transform: uppercase;
 }
-nav a:hover{
-    border-bottom:1px solid white;
+nav active ,nav a:hover{
+    border-bottom:2px solid white;
+}
+
+.nav_scroll{
+        background: #00acc2;
 }
 
 /*--------------------------*/
@@ -287,7 +293,9 @@ contact{
 contact h3{
     color:#00acc2;
     margin:1em;
-
+}
+contact address{
+    margin: 1em;
 }
 contact a{
     text-decoration: none;
@@ -320,4 +328,5 @@ form input,form textarea{
     text-align: justify;
     text-transform: none;
     font-size: 1.1em;
+    padding: 5px;
 }

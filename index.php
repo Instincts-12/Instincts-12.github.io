@@ -23,7 +23,7 @@
             <img src="drawable/logo_stroke (1)_animated.svg"/>
         </loading>
 
-        <landing>
+        <landing id="home">
             <p>SSN PRESENTS</p>
             <h1>INSTINCTS</h1>
             <p>in association with</p>
@@ -31,7 +31,7 @@
         </landing>
 
         <sections>
-            <wrapper class="texts">
+            <wrapper class="texts" id="aboutus">
                 <circle>
                     <h3>About-Us</h3>
                 </circle>
@@ -56,7 +56,7 @@
 
                     <p>Get Ready for SSN Instincts 2K17.</p>
             </wrapper>
-            <wrapper>
+            <wrapper id="event">
                 <circle>
                     <h3>Events</h3>
                 </circle>
@@ -139,7 +139,7 @@
                     </eventlist>
                 </events>
             </wrapper>
-            <wrapper>
+            <wrapper id="gallery">
                 <circle>
                     <h3>Gallery</h3>
                 </circle>
@@ -152,7 +152,7 @@
                     <?php endif;endforeach;?>
                 </gallery>
             </wrapper>
-            <wrapper>
+            <wrapper id="contact">
                 <circle>
                     <h3>Contact-us</h3>
                 </circle>
@@ -160,7 +160,9 @@
                     <contact>
                         <h3>Address</h3>
                         <address>
-                            SSN COLLEGE of ENGINEERING,<br>
+                            SSN College of Engineering,<br>
+                            Ragiv Gandhi Road, OMR,<br/>
+                            Kalavakkam, Chennai - 603110.
                         </address>
                         <h3>Call Us</h3>
                         <a href="tel">2342342323434</a>
@@ -177,7 +179,7 @@
                     </sayhello>
                 </contactbox>
             </wrapper>
-            <wrapper>
+            <wrapper id="maps">
                 <circle>
                     <h3>Map</h3>
                 </circle>
@@ -192,13 +194,13 @@
                 <!--<h1>INSTINCTS</h1>-->
             </brand>
             <links>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="#home">HOME</a>
+                <a href="#aboutus">ABOUT-US</a>
+                <a href="#event">EVENTS</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#sponsor">SPONSORS</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="#maps">MAP</a>
             </links>
     </nav>
 
