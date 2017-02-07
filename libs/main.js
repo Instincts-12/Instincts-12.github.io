@@ -103,7 +103,9 @@ function myMap() {
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
         center: new google.maps.LatLng( 12.7501954, 80.1964977),
-        zoom: 14
+        zoom: 14,
+        scrollwheel: false,
+
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({

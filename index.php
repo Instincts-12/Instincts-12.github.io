@@ -3,13 +3,24 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-        <script src='libs/jquery.js'></script>
-        <!--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="stylesheet" href="libs/main.css"/>
+        
+        <meta name="keywords" content="instincts,ssn,culturals,chennai,march,roller,coaster,sri,siva,subramaniya"/>
+        <meta name="description" content="So get ready to hop onto the wildest and most adventure.Get Ready for the Instincts 12.0"/>
+        
+        <meta property="og:title" content="SSN_INSTINCTS"/>
+        <meta property="og:site_name" content="SSN_INSTINCTS_12.0"/>
+        <meta property="og:url" content="http://ssninstincts.org.in"/>  
+        <meta property="og:type" content="website"> 
+        <meta property="og:description" content="So get ready to hop onto the wildest and most adventure.Get Ready for the Instincts 12.0"/>
+        <meta property="og:image" content="http://ssninstincts.org.in/drawable/cover.jpg"/>
+        <meta property="fb:app_id" content="381315482203940"/>
+        <meta property="fb:admins" content="100007479881813"/>
+        
+        
 
-
-        <!--<script src="libs/paperfold.min.js"></script>-->
         <title>INSTINCTS 12</title>
     </head>
     <script>
