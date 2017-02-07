@@ -292,11 +292,12 @@ associatesponsor{
 associatesponsor div{
     width: 50%;
     margin: auto;
+    box-sizing: border-box;
     min-width: 300px;
     display: inline-flex;
 }
 associatesponsor div img{
-    margin: 80px auto;
+    margin: 50px auto;
     /*margin-top: 80px;*/
     width: 250px;
 
@@ -314,24 +315,37 @@ Stitle{
 /*-----------------*/
 contactbox{
     display:flex;
+    /*margin: 20px;
+    border: 1px solid #aaa;
+    padding:20px;*/
     background:white;
+    flex-wrap: wrap;
     border-radius:5px;
 }
 contactbox contact,contactbox sayhello{
-    padding:1em;
+    margin: 2em;
     color:#888;
+    /*max-width: 600px;*/
     flex:1;
     display:flex;
     flex-direction: column;
 }
 contact{
+    width: 50%;
     text-align:center;
     display:flex;
     flex-direction:column;
     justify-content: space-around;
 }
+contactcontainer{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
 contact h3{
+    padding: 20px;
     color:#00acc2;
+    text-align: left;
     margin:1em;
 }
 contact address{
@@ -344,9 +358,16 @@ contact a{
 
 }
 contactbox sayhello{
+    width: 50%;
     flex:1;
 }
+formcontainer{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
 form{
+    width: 100%;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
@@ -354,7 +375,12 @@ form{
 }
 form input,form textarea{
     border:none;
-    padding:1em;
+    border-radius: 10px;
+    padding:10px;
+    width: 500px;
+    /*max-width: 100%;*/
+    margin: 0 auto;
+    font-size: 20px;;
     border-bottom:1px solid #888;
     margin:1em;
 }

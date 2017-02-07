@@ -189,24 +189,28 @@
                 </circle>
                 <contactbox>
                     <contact>
-                        <h3>Address</h3>
-                        <address>
-                            SSN College of Engineering,<br>
-                            Ragiv Gandhi Road, OMR,<br/>
-                            Kalavakkam, Chennai - 603110.
-                        </address>
-                        <h3>Call Us</h3>
-                        <a href="tel">2342342323434</a>
-                        <h3>Mail us</h3>
-                        <a href="mail">asfasfasfd</a>
+                        <contactcontainer>
+                            <h3>Address</h3>
+                            <address>
+                                SSN College of Engineering,<br>
+                                Ragiv Gandhi Road, OMR,<br/>
+                                Kalavakkam, Chennai - 603110.
+                            </address>
+                            <h3>Call Us</h3>
+                            <a href="tel">2342342323434</a>
+                            <h3>Mail us</h3>
+                            <a href="mail">asfasfasfd</a>
+                        </contactcontainer>
                     </contact>
                     <sayhello>
-                        <form>
-                            <input placeholder="Name" type="text" name="name"/>
-                            <input placeholder='Email' type="email" name="email"/>
-                            <textarea placeholder='Message' name="message"></textarea>
-                            <input type="submit"/>
-                        </form>
+                        <formcontainer>
+                            <form>
+                                <input placeholder="Name" type="text" name="name"/>
+                                <input placeholder='Email' type="email" name="email"/>
+                                <textarea placeholder='Message' name="message"></textarea>
+                                <input type="submit"/>
+                            </form>
+                        </formcontainer>
                     </sayhello>
                 </contactbox>
             </wrapper>
