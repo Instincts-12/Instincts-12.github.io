@@ -237,7 +237,7 @@
         </sections>
     <nav>
             <brand>
-                <img src="drawable/logo_new.svg"/>
+                <img src="drawable/logo_svg-01.svg"/>
                 <!--<h1>INSTINCTS</h1>-->
             </brand>
             <links>
