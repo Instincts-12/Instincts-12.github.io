@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing:border-box;
     /*border:1px dashed red;*/
@@ -6,6 +8,7 @@
 }
 body{
     margin:0px;
+    padding: 0;
     background:#003366 url('../drawable/texture_layer.png');
 
 }
@@ -102,6 +105,13 @@ brand img{
     /*height:auto;*/
     margin:auto 10px;
 }
+menubutton{
+  display: none;
+  float: right;
+  background: url("../sponsors/menu-button.png") right center;
+  width:36px;
+  height: 50px;
+}
 /*nav h1{
     margin:0;
     display:inline;
@@ -114,9 +124,11 @@ nav a{
     padding:1em;
     font-weight:normal;;
     text-transform: uppercase;
+    /*transition: 3s ease;*/
 }
-nav active ,nav a:hover{
-    border-bottom:2px solid white;
+.navactive ,nav a:hover{
+    border-bottom:4px solid white;
+    /*background: #0099aa;*/
 }
 
 .nav_scroll{
@@ -125,6 +137,7 @@ nav active ,nav a:hover{
 
 /*--------------------------*/
 modal{
+    display: none;
     position:fixed;
     top:0;
     left:0;
@@ -208,7 +221,10 @@ landing{
     justify-content: center;
 }
 landing h1{
-    font-size:4em;
+    font-size:6em;
+}
+landing p{
+    font-size: 1.5em;
 }
 /*--------------------------------*/
 sections{
@@ -222,7 +238,7 @@ sections{
 wrapper{
     display:block;
     background:#00acc2 url('../drawable/texture_layer.png');
-    border-radius:5px;
+    border-radius:20px;
     border-top:2px dashed yellow;
     box-shadow:0px -20px 0px 0px #00ACC2;
     margin:auto;
@@ -293,6 +309,7 @@ sponsor img{
 titlesponsor{
     display: block;
 }
+titlesponsor img {width: 300px;}
 associatesponsor{
     margin: auto;
     display: flex;
@@ -324,15 +341,12 @@ Stitle{
 /*-----------------*/
 contactbox{
     display:flex;
-    /*margin: 20px;
-    border: 1px solid #aaa;
-    padding:20px;*/
     background:white;
     flex-wrap: wrap;
-    border-radius:5px;
+    border-radius:20px;
 }
 contactbox contact,contactbox sayhello{
-    margin: 2em;
+    padding:  2em;
     color:#888;
     /*max-width: 600px;*/
     flex:1;
@@ -341,7 +355,7 @@ contactbox contact,contactbox sayhello{
 }
 contact{
     width: 50%;
-    text-align:center;
+    text-align:left;
     display:flex;
     flex-direction:column;
     justify-content: space-around;
@@ -359,10 +373,15 @@ contact h3{
 }
 contact address{
     margin: 1em;
+    padding-left: 20px;
+    font-style: normal;
+    text-align: left;
 }
 contact a{
+    padding-left: 20px;
     text-decoration: none;
     color:#888;
+    text-align: left;
     margin:1em;
 
 }
@@ -407,4 +426,21 @@ footer{
     background-color: #00acc2;
     color: #fff;
     padding: 20px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:450px){
+    links{ display: none;}
+    nav{height: 80px;}
+    landing h1{font-size: 3.2em;}
+    landing p{font-size: 16px;}
+    .texts{padding: 20px; padding-top: 100px;}
+    eventlist{margin-top: 20px;}
+    gallery img{width: 250px;}
+    sponsor{padding: 0;padding-top: 20px;}
+    sponsor img{width: 250px;   }
+    Stitle{font-size: 20px; padding: 10px;}
+    contact{border-bottom: 2px dashed #00acc2;padding-bottom: 30px;}
+    contactbox sayhello {padding: 0em;}
+    form input, form textarea{width: 250px;}
 }

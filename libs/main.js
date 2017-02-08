@@ -22,14 +22,53 @@ $(function() {
 
 
 $(document).ready(function(){
+    $('#loading').hide(100);
     $("modal").hide();
-    setInterval(function(){
-        if($(document).scrollTop()>50){
+    var homeheight= $('#home').height();
+    var aboutheight = $('#aboutus').height() + $('#instincts').height();
+    var eventheight = $('#event').height();
+    var galleryheight = $('#gallery').height();
+    var sponsorheight = $('#sponsor').height();
+    var contactheight = $('#contact').height();
+
+    var scrollchange=   function(){
+        var scroll = $(document).scrollTop();
+        if(scroll>50){
             $('nav').addClass('nav_scroll');
         }else{
             $('nav').removeClass('nav_scroll');
         }
-    },100);
+
+        if(scroll>=homeheight+aboutheight+eventheight+galleryheight+sponsorheight+contactheight){
+            $('.navactive').removeClass('navactive');
+            $('#map').addClass('navactive');
+        }else if (scroll>=homeheight+aboutheight+eventheight+galleryheight+sponsorheight) {
+            $('.navactive').removeClass('navactive');
+            $('#contact').addClass('navactive');
+        }else if (scroll>=homeheight+aboutheight+eventheight+galleryheight) {
+            $('.navactive').removeClass('navactive');
+            $('#sponsor').addClass('navactive');
+        }else if (scroll>=homeheight+aboutheight+eventheight) {
+            $('.navactive').removeClass('navactive');
+            $('#gallery').addClass('navactive');
+        }else if (scroll>=homeheight+aboutheight) {
+            $('.navactive').removeClass('navactive');
+            $('#event').addClass('navactive');
+        }else if (scroll>=homeheight) {
+            $('.navactive').removeClass('navactive');
+            $('#aboutus').addClass('navactive');
+        }else{
+            $('.navactive').removeClass('navactive');
+            $('#home').addClass('navactive');
+        }
+
+        if (scroll>1000) {
+            $('#home').addClass('navactive');
+        }
+    };
+
+    scrollchange();
+    $(window).scroll(scrollchange);
 
     $("card").click(function(){
         $("card").removeClass("active");
@@ -91,7 +130,9 @@ $(document).ready(function(){
     //          $("nav").removeClass("affix");
     //      }
     //  });
-
+    if($(window).width()<450){
+        $('menubutton').show();
+    }
 });
 function big(img){
       $("#image-modal img").attr("src",img.src.replace("w=300","w=800"));

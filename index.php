@@ -4,30 +4,25 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="libs/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="stylesheet" href="libs/main.css"/>
-        
+
         <meta name="keywords" content="instincts,ssn,culturals,chennai,march,roller,coaster,sri,siva,subramaniya"/>
         <meta name="description" content="So get ready to hop onto the wildest and most adventure.Get Ready for the Instincts 12.0"/>
-        
+
         <meta property="og:title" content="SSN_INSTINCTS"/>
         <meta property="og:site_name" content="SSN_INSTINCTS_12.0"/>
-        <meta property="og:url" content="http://ssninstincts.org.in"/>  
-        <meta property="og:type" content="website"> 
+        <meta property="og:url" content="http://ssninstincts.org.in"/>
+        <meta property="og:type" content="website">
         <meta property="og:description" content="So get ready to hop onto the wildest and most adventure.Get Ready for the Instincts 12.0"/>
         <meta property="og:image" content="http://ssninstincts.org.in/drawable/cover.jpg"/>
         <meta property="fb:app_id" content="381315482203940"/>
         <meta property="fb:admins" content="100007479881813"/>
-        
-        
+
 
         <title>INSTINCTS 12</title>
     </head>
-    <script>
-        window.addEventListener('load',function(){
-            document.getElementById("loading").style.display='none';
-        });
-    </script>
     <body>
 
         <loading id="loading">
@@ -35,10 +30,10 @@
         </loading>
 
         <landing id="home">
-            <p>SSN PRESENTS</p>
+            <p>SSN COLLEGE OF ENGINEERING</p><p> PRESENTS</p>
             <h1>INSTINCTS</h1>
             <p>in association with</p>
-            <h2>HCL</h2>
+            <h2><img src="sponsors/hcl.gif" width="250" /></h2>
         </landing>
 
         <sections>
@@ -51,7 +46,7 @@
                     <p>    So when it comes to learning , SSN doesn't stop at the educational front,it acts as a catalyst that ignites students to reach the point of zenith in the cultural sphere as well.</p><br/>
                     <p>    The future is set in motion when there is a confluence of youth; SSN takes pride in being responsible for the revolution that follows!</p>
             </wrapper>
-            <wrapper class="texts">
+            <wrapper class="texts" id="instincts">
                 <circle>
                     <h3>INSTINCTS</h3>
                 </circle>
@@ -170,7 +165,7 @@
                 <sponsor>
                     <Stitle>TITLE SPONSOR</Stitle><br/>
                     <titlesponsor>
-                        <img src="sponsors/hcl.gif" width="300"/>
+                        <img src="sponsors/hcl.gif"/>
                     </titlesponsor>
                 </sponsor>
                 <sponsor>
@@ -240,6 +235,7 @@
                 <img src="drawable/logo_new.svg"/>
                 <!--<h1>INSTINCTS</h1>-->
             </brand>
+            <menubutton> </menubutton>
             <links>
                 <a href="#home">HOME</a>
                 <a href="#aboutus">ABOUT-US</a>
@@ -278,10 +274,9 @@
             <img></img>
         </modal>
         <footer>
-            Copyright &copy; 2016-2017 by Instincts - SSN. All Rights are Reserved.
+            Copyright &copy; 2017 by Instincts - SSN. All Rights are Reserved.
         </footer>
     </body>
-    <script src="libs/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73231zggkC-td1FP7UVHJN8op1ZqEy38&callback=myMap"></script>
 
 </html>
