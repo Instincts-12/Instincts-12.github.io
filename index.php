@@ -232,7 +232,7 @@
         </sections>
     <nav>
             <brand>
-                <img src="drawable/logo_svg-01.svg"/>
+                <img src="drawable/logo_new.svg"/>
                 <!--<h1>INSTINCTS</h1>-->
             </brand>
             <menubutton> </menubutton>
