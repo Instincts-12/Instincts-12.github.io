@@ -130,9 +130,23 @@ $(document).ready(function(){
     //          $("nav").removeClass("affix");
     //      }
     //  });
+// <<<<<<< HEAD
     if($(window).width()<450){
         $('menubutton').show();
     }
+// =======
+//
+    var movementStrength = 25;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$("#home").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $("#home").css("background-position", newvalueX+"px   "+newvalueY+"px");
+          });
+// >>>>>>> b5420f37e8524a72e5f72c08e00c81f58a8213df
 });
 function big(img){
       $("#image-modal img").attr("src",img.src.replace("w=300","w=800"));
