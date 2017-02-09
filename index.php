@@ -4,7 +4,6 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="libs/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="stylesheet" href="libs/main.css"/>
 
@@ -21,20 +20,38 @@
         <meta property="fb:admins" content="100007479881813"/>
 
 
+
         <title>INSTINCTS 12</title>
     </head>
+    <script>
+        window.addEventListener('load',function(){
+            // document.getElementById("loading").style.display='none';
+
+            $('loading').slideUp(1000);
+        });
+    </script>
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=381315482203940";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <body>
 
         <loading id="loading">
             <img src="drawable/logo_stroke (1)_animated.svg"/>
         </loading>
-
+        <cover></cover>
         <landing id="home">
-            <p>SSN COLLEGE OF ENGINEERING</p><p> PRESENTS</p>
+            <p>SSN COLLEGE OF ENGINEERING</p>
+            <p>Presents</p>
             <h1>INSTINCTS</h1>
             <p>in association with</p>
-            <h2><img src="sponsors/hcl.gif" width="250" /></h2>
+            <h2><img src="sponsors/hcl.gif" /></h2>
         </landing>
+
 
         <sections>
             <wrapper class="texts" id="aboutus">
@@ -46,7 +63,7 @@
                     <p>    So when it comes to learning , SSN doesn't stop at the educational front,it acts as a catalyst that ignites students to reach the point of zenith in the cultural sphere as well.</p><br/>
                     <p>    The future is set in motion when there is a confluence of youth; SSN takes pride in being responsible for the revolution that follows!</p>
             </wrapper>
-            <wrapper class="texts" id="instincts">
+            <wrapper class="texts">
                 <circle>
                     <h3>INSTINCTS</h3>
                 </circle>
@@ -165,7 +182,7 @@
                 <sponsor>
                     <Stitle>TITLE SPONSOR</Stitle><br/>
                     <titlesponsor>
-                        <img src="sponsors/hcl.gif"/>
+                        <img src="sponsors/hcl.gif" width="300"/>
                     </titlesponsor>
                 </sponsor>
                 <sponsor>
@@ -237,35 +254,34 @@
             </brand>
             <menubutton> </menubutton>
             <links>
-                <a href="#home">HOME</a>
-                <a href="#aboutus">ABOUT-US</a>
-                <a href="#event">EVENTS</a>
-                <a href="#gallery">GALLERY</a>
-                <a href="#sponsor">SPONSORS</a>
-                <a href="#contact">CONTACT US</a>
-                <a href="#maps">MAP</a>
+                <a class="hlink" href="#home">HOME</a>
+                <a class="alink" href="#aboutus">ABOUT-US</a>
+                <a class="elink" href="#event">EVENTS</a>
+                <a class="glink" href="#gallery">GALLERY</a>
+                <a class="slink" href="#sponsor">SPONSORS</a>
+                <a class="clink" href="#contact">CONTACT US</a>
+                <a class="mlink" href="#maps">MAP</a>
             </links>
     </nav>
+
+
 
          <modal id='event-modal'>
             <close onclick="this.parentElement.style.display='none'">X</close>
             <modal-content>
                 <ul id='eventlist'>
-                    <li>one</li>
-                    <li>one</li>
-                    <li>one</li>
-                    <li>one</li>
-                    <li>one</li>
                 </ul>
                 <detail>
                     <h3 id="title">EventofDance</h3>
                     <p id="desc">Description goe shere.</p>
                     <hr>
                     <h4>Rules</h4>
-                    <ul id="rules"><li>Rule1</li><li>Rule2</li><li>Rule3</li></ul>
+                        <ul id="rules">
+                        </ul>
                     <hr>
                     <h4>COntact</h4>
-                    <ul id="contacts"><li>AkashMilton</li><li>9443807686</li></ul>
+                    <ul id="contacts"></ul>
+
                 </detail>
 
             </modal-content>
@@ -273,10 +289,23 @@
         <modal onclick="this.style.display='none'" id='image-modal'>
             <img></img>
         </modal>
-        <footer>
-            Copyright &copy; 2017 by Instincts - SSN. All Rights are Reserved.
-        </footer>
+    <footer>
+        <social>
+            <boxes>
+                <div class="fb-send" data-href="http://ssninstincts.org.in"></div>
+                <div class="fb-share-button" data-href="http://ssninstincts.org.in" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fssninstincts.org.in%2F&amp;src=sdkpreparse">Share</a></div>
+                <div class="fb-like" data-href="http://facebook.com/instincts.ssn" data-width="300" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+            </boxes>
+            <comment>
+                <div class="fb-comments"  data-href="http://ssninstincts.org.in" data-numposts="5"></div>
+            </comment>
+        </social>
+        <p>
+            Copyright &copy; 2016-2017 by Instincts - SSN. All Rights are Reserved.
+        </p>
+    </footer>
     </body>
+    <script src="libs/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73231zggkC-td1FP7UVHJN8op1ZqEy38&callback=myMap"></script>
 
 </html>
