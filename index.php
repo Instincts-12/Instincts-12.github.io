@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="shortcut icon" href="drawable/logo_new.ico" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="stylesheet" href="libs/main.css"/>
@@ -87,77 +88,94 @@
                     <eventlist>
                         <card>
                         <img src="drawable/landing-01.svg"/>
+                            <h3>English Literary Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Variety Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Quiz Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Music Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Saaral Tamil Mandram</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Fine Arts Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Dance Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Film Club</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Photography Club</h3>
+                            <p>“Taking an image, freezing a moment, reveals how rich reality truly is”</p>
+                        </card>
+                        <card>
+                        <img src="drawable/landing-01.svg"/>
+                            <h3>Lights Out Please</h3>
+                            <p>
+                                <!-- The definition or any quote to title.Lorem Ipsum
+                                    ion or any quote to title.Lorem Ipsum -->
+                                </p>
+                        </card>
+                        <!-- <card>
+                        <img src="drawable/landing-01.svg"/>
                             <h3>dance</h3>
                             <p>The definition or any quote to title.Lorem Ipsum
                                     ion or any quote to title.Lorem Ipsum</p>
                         </card>
                         <card>
                         <img src="drawable/landing-01.svg"/>
-                            <h3>d</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
                             <h3>dance</h3>
                             <p>The definition or any quote to title.Lorem Ipsum
                                     ion or any quote to title.Lorem Ipsum</p>
                         </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-
+ -->
 
                     </eventlist>
                 </events>
@@ -269,6 +287,7 @@
          <modal id='event-modal'>
             <close onclick="this.parentElement.style.display='none'">X</close>
             <modal-content>
+                Events Will Be Updated Soon...
                 <ul id='eventlist'>
                 </ul>
                 <detail>
