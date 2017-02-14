@@ -712,5 +712,28 @@
       "ContactNumber":[
          "9791679758"
       ]
-   }
+   },
+   {
+       "Id":"38",
+       "EventName":"REELS OF FIRE",
+       "ClubName":"Film Club",
+       "Descr":"Reels of fire is the annual short film festival of SSN College of Engineering conducted as a part of INSTINCTS, the cultural extravaganza of SSN. Its the battle of only the best, in which the most promising talent across the country participate, win name and fame and also return home with attractive cash rewards. Reels of fire has seen some of the most tear-jerking, awe-inspiring and sensational short films, all judged by influential and impartial men from the industry. Come, participate and fire the movie-buff inside you.",
+       "Dating":"10-03-17",
+       "Timing":"9AM - 12PM",
+       "Venue":"Main auditorium",
+       "Info":"Prize money worth 30k",
+       "Ruling":[
+           "Theme - open theme. ",
+           "Max duration - 15 min",
+           "Deadline -march 7",
+           "Entry Rs-500 , for short listed entries"
+        ],
+        "ContactName":[
+            "S.NAVEEN",
+            "Kamesh"
+        ],
+        "ContactNumber":[
+            "9597303058",
+            "9677168403"]
+    }
 ]

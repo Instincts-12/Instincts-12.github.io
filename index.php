@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="shortcut icon" href="drawable/logo_new.ico" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
         <link rel="stylesheet" href="libs/main.css"/>
 
         <meta name="keywords" content="instincts,ssn,culturals,chennai,march,roller,coaster,sri,siva,subramaniya"/>
@@ -28,7 +28,7 @@
     </head>
     <script>
         window.addEventListener('load',function(){
-            // document.getElementById("loading").style.display='none';
+//             document.getElementById("loading").style.display='none';
 
             $('loading').slideUp(1000);
         });
@@ -43,11 +43,11 @@
         }(document, 'script', 'facebook-jssdk'));</script>
     <body ng-app="instincts" ng-controller="instincts">
 
-<!--        <loading id="loading">
+        <loading id="loading">
             <img src="drawable/logo_stroke (1)_animated.svg"/>
-        </loading>-->
+        </loading>
         <cover></cover>
-        <landing id="home">
+        <landing class="star" id="home">
             <p>SSN COLLEGE OF ENGINEERING</p>
             <p>Presents</p>
             <h1>INSTINCTS</h1>
@@ -57,7 +57,7 @@
 
 
         <sections>
-            <wrapper class="texts" id="aboutus">
+            <wrapper class="texts star" id="aboutus">
                 <circle>
                     <h3>About-Us</h3>
                 </circle>
@@ -66,7 +66,7 @@
                     <p>    So when it comes to learning , SSN doesn't stop at the educational front,it acts as a catalyst that ignites students to reach the point of zenith in the cultural sphere as well.</p><br/>
                     <p>    The future is set in motion when there is a confluence of youth; SSN takes pride in being responsible for the revolution that follows!</p>
             </wrapper>
-            <wrapper class="texts">
+            <wrapper class="texts star">
                 <circle>
                     <h3>INSTINCTS</h3>
                 </circle>
@@ -82,7 +82,7 @@
 
                     <p>Get Ready for SSN Instincts 2K17.</p>
             </wrapper>
-            <wrapper id="event">
+            <wrapper id="event" class="star">
                 <circle>
                     <h3>Events</h3>
                 </circle>
@@ -97,7 +97,7 @@
                     </eventlist>
                 </events>
             </wrapper>
-            <wrapper id="gallery">
+            <wrapper id="gallery" class="star">
                 <circle>
                     <h3>Gallery</h3>
                 </circle>
@@ -106,11 +106,11 @@
                         foreach(new DirectoryIterator('./drawable/gallery/') as $file):
                             if($file->isFile()):?>
 
-                    <img onclick='big(this)' src="drawable/image.php?url=gallery/<?php echo $file->getFilename();?>&w=300"/>
+                    <!--<img onclick='big(this)' src="drawable/image.php?url=gallery/<?php echo $file->getFilename();?>&w=300"/>-->
                     <?php endif;endforeach;?>
                 </gallery>
             </wrapper>
-            <wrapper id="sponsor">
+            <wrapper id="sponsor" class="star">
                 <circle>
                     <h3>Sponsors</h3>
                 </circle>
@@ -142,7 +142,7 @@
                     </associatesponsor>
                 </sponsor>
             </wrapper>
-            <wrapper id="contact">
+            <wrapper id="contact" class="star">
                 <circle>
                     <h3>Contact-us</h3>
                 </circle>
@@ -173,7 +173,7 @@
                     </sayhello>
                 </contactbox>
             </wrapper>
-            <wrapper id="maps">
+            <wrapper id="maps" class="star">
                 <circle>
                     <h3>Map</h3>
                 </circle>
@@ -184,25 +184,25 @@
         </sections>
     <nav>
             <brand>
-                <img src="drawable/logo_new.svg"/>
+                <img src="drawable/logo_svg-01.svg"/>
                 <!--<h1>INSTINCTS</h1>-->
             </brand>
-            <menubutton> </menubutton>
+            <!--<menubutton> </menubutton>-->
             <links>
-                <a class="hlink" href="#home">HOME</a>
-                <a class="alink" href="#aboutus">ABOUT-US</a>
-                <a class="elink" href="#event">EVENTS</a>
-                <a class="glink" href="#gallery">GALLERY</a>
-                <a class="slink" href="#sponsor">SPONSORS</a>
-                <a class="clink" href="#contact">CONTACT US</a>
-                <a class="mlink" href="#maps">MAP</a>
+                <a class="active" href="#home">HOME</a>
+                <a href="#aboutus">ABOUT-US</a>
+                <a href="#event">EVENTS</a>
+                <a  href="#gallery">GALLERY</a>
+                <a  href="#sponsor">SPONSORS</a>
+                <a  href="#contact">CONTACT US</a>
+                <a  href="#maps">MAP</a>
             </links>
     </nav>
 
 
 
          <modal id='event-modal'>
-            <close onclick="this.parentElement.style.display='none'">X</close>
+                <close onclick="this.parentElement.style.display='none'">X</close>
             <modal-content>
                 <ul id='eventlist'>
                     <li ng-click="eventDetails(events.EventName)" ng-repeat="events in eventlist | filter:currentClub ">{{events.EventName}}</li>
@@ -216,26 +216,23 @@
                         <li ng-repeat="rule in currentEvent.Ruling">{{rule}}</li>
                     </ul>
                     <hr>
-                    <h4>Timing</h4>
+                    <h4 ng-show="currentEvent.Timimg">Timing</h4>
                     <timing>{{currentEvent.Timing}}</timing>
-                    <h4>Date</h4>
-                    <date>{{currentEvent.Date}}</date>
-                    <h4>Venue</h4>
+                    <h4 ng-show="currentEvent.Dating">Date</h4>
+                    <date>{{currentEvent.Dating}}</date>
+                    <h4 ng-show="currentEvent.Venue">Venue</h4>
                     <venue>{{currentEvent.Venue}}</venue>
-                    <h4>Info</h4>
-                    <ul id="info">
-                        <li ng-repeat="info in currentEvent.Info">{{info}}</li>
-                    </ul>
+                    <h4 ng-show="currentEvent.Info">Info</h4>
+                    <p>{{currentEvent.Info}}</p>
                     <h4>COntact</h4>
-                    <ul id="contacts">
-                        <li>
+                    <ul id="contacts" ng-if="currentEvent.ContactName">
+                        <li ng-repeat="Contact in currentEvent.ContactName">
                             <a class="contact">
-                                <name></name>
-                                <number></number>
+                                <name>{{currentEvent.ContactName[$index]}}</name>
+                                <number>{{currentEvent.ContactNumber[$index]}}</number>
                             </a>
                         </li>
                     </ul>
-
                 </detail>
 
             </modal-content>
@@ -246,9 +243,9 @@
     <footer>
         <social>
             <boxes>
-                <div class="fb-send" data-href="http://ssninstincts.org.in"></div>
+                <div class="fb-send" data-href="http://ssninstincts.org.in/"></div>
                 <div class="fb-share-button" data-href="http://ssninstincts.org.in" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fssninstincts.org.in%2F&amp;src=sdkpreparse">Share</a></div>
-                <div class="fb-like" data-href="http://facebook.com/instincts.ssn" data-width="300" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                <div class="fb-like" data-href="http://facebook.com/instincts.ssn/" data-width="300" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
             </boxes>
             <comment>
                 <div class="fb-comments"  data-href="http://ssninstincts.org.in" data-numposts="5"></div>
@@ -261,5 +258,14 @@
     </body>
     <script src="libs/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73231zggkC-td1FP7UVHJN8op1ZqEy38&callback=myMap"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-90358781-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
 </html>
