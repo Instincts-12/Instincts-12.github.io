@@ -20,6 +20,8 @@
         <meta property="fb:app_id" content="381315482203940"/>
         <meta property="fb:admins" content="100007479881813"/>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
 
 
         <title>INSTINCTS 12</title>
@@ -39,11 +41,11 @@
           js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=381315482203940";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-    <body>
+    <body ng-app="instincts" ng-controller="instincts">
 
-        <loading id="loading">
+<!--        <loading id="loading">
             <img src="drawable/logo_stroke (1)_animated.svg"/>
-        </loading>
+        </loading>-->
         <cover></cover>
         <landing id="home">
             <p>SSN COLLEGE OF ENGINEERING</p>
@@ -86,97 +88,12 @@
                 </circle>
                 <events>
                     <eventlist>
-                        <card>
+                        <card ng-click="clubEvents(event.ClubName)" ng-repeat="event in eventlist | unique:'ClubName'">
+                        
                         <img src="drawable/landing-01.svg"/>
-                            <h3>English Literary Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
+                            <h3>{{event.ClubName}}</h3>
+                            <!--<p>“Taking an image, freezing a moment, reveals how rich reality truly is”</p>-->
                         </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Variety Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Quiz Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Music Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Saaral Tamil Mandram</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Fine Arts Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Dance Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Film Club</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Photography Club</h3>
-                            <p>“Taking an image, freezing a moment, reveals how rich reality truly is”</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>Lights Out Please</h3>
-                            <p>
-                                <!-- The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum -->
-                                </p>
-                        </card>
-                        <!-- <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
-                        <card>
-                        <img src="drawable/landing-01.svg"/>
-                            <h3>dance</h3>
-                            <p>The definition or any quote to title.Lorem Ipsum
-                                    ion or any quote to title.Lorem Ipsum</p>
-                        </card>
- -->
-
                     </eventlist>
                 </events>
             </wrapper>
@@ -287,19 +204,37 @@
          <modal id='event-modal'>
             <close onclick="this.parentElement.style.display='none'">X</close>
             <modal-content>
-                Events Will Be Updated Soon...
                 <ul id='eventlist'>
+                    <li ng-click="eventDetails(events.EventName)" ng-repeat="events in eventlist | filter:currentClub ">{{events.EventName}}</li>
                 </ul>
                 <detail>
-                    <h3 id="title">EventofDance</h3>
-                    <p id="desc">Description goe shere.</p>
+                    <h3 id="title">{{currentEvent.EventName}}</h3>
+                    <p id="desc">{{currentEvent.Descr}}</p>
                     <hr>
                     <h4>Rules</h4>
-                        <ul id="rules">
-                        </ul>
+                    <ul id="rules">
+                        <li ng-repeat="rule in currentEvent.Ruling">{{rule}}</li>
+                    </ul>
                     <hr>
+                    <h4>Timing</h4>
+                    <timing>{{currentEvent.Timing}}</timing>
+                    <h4>Date</h4>
+                    <date>{{currentEvent.Date}}</date>
+                    <h4>Venue</h4>
+                    <venue>{{currentEvent.Venue}}</venue>
+                    <h4>Info</h4>
+                    <ul id="info">
+                        <li ng-repeat="info in currentEvent.Info">{{info}}</li>
+                    </ul>
                     <h4>COntact</h4>
-                    <ul id="contacts"></ul>
+                    <ul id="contacts">
+                        <li>
+                            <a class="contact">
+                                <name></name>
+                                <number></number>
+                            </a>
+                        </li>
+                    </ul>
 
                 </detail>
 
